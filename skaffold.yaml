@@ -12,9 +12,8 @@ build:
       context: auth
       docker:
         dockerfile: Dockerfile
-        noCache: false
-        squash: false
       sync:
         manual:
-          - dest: .
-            src: 'src/**/*.ts'
+          - src: 'src/**/*.ts'
+            dest: .
+            
