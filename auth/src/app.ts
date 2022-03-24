@@ -8,8 +8,8 @@ import { currentUserRouter } from './routes/current-user';
 import { signinRouter } from './routes/signin';
 import { signoutRouter } from './routes/signout';
 import { signupRouter } from './routes/signup';
-import { errorHandler } from './middleware/error-handler'
-import { NotFoundError } from './errors/not-found-error'
+import { errorHandler } from '@takesure/common'
+import { NotFoundError } from '@takesure/common'
 
 
 
