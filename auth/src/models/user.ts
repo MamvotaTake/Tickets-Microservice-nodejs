@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { Password } from '../services/passwrds'
 
 // An interface that describe the properties 
-// that are rewuired to create a new User
+// that are required to create a new User
 
 interface UserAttrs {
     email: string;
