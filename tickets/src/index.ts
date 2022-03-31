@@ -1,5 +1,5 @@
 
-import log from '../utils/logger'
+import log from './utils/logger'
 import mongoose from 'mongoose';
 import {app} from './app'
 
@@ -10,8 +10,8 @@ const start = async () => {
         throw new Error('JWT_KEY must be defined!')
     }
 
-    if(!process.env.MONGO_URL) {
-        throw new Error('MONGO_URL must be defined')
+    if (!process.env.MONGO_URL) {
+        throw new Error('MONGO_URL must be defined!')
     }
 
     try {
