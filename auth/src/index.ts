@@ -1,5 +1,5 @@
 
-import log from '../utils/logger'
+import log from './utils/logger'
 import mongoose from 'mongoose';
 import {app} from './app'
 

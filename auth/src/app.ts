@@ -1,6 +1,6 @@
 import express from 'express';
 import 'express-async-errors'
-import log from '../utils/logger'
+import log from '@takesure/common'
 import mongoose from 'mongoose';
 import cookieSession from 'cookie-session';
 
