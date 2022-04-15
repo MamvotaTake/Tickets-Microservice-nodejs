@@ -1,5 +1,6 @@
 import nats from 'node-nats-streaming';
-import logger from '@takesure/common'
+
+console.clear();
 
 
 const stan = nats.connect('ticketing', 'abc', {
@@ -13,10 +14,11 @@ stan.on('connect', ()=>{
     const data = JSON.stringify({ 
         id: '123',
         title: 'Takesure',
-        price: 200
+        price: 200,
+        name: 'Mamvota'
     });
 
     stan.publish('ticket:created', data, ()=>{
-        console.log('Event publishded');
+        console.log('Event published');
     })
 });
