@@ -4,6 +4,8 @@ import jwt from 'jsonwebtoken'
 import { app } from '../app';
 import { beforeAll, beforeEach, afterAll } from '@jest/globals'
 
+jest.mock('../nats-wrapper')
+
 let mongo: any;
 
 declare global {
