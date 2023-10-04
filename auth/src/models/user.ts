@@ -43,6 +43,12 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+/**
+ * Description
+ * @param {any} 'save'
+ * @param {any} asyncfunction(done
+ * @returns {any}
+ */
 userSchema.pre('save', async function (done) {
     if (this.isModified('password')) {
         const hash = await Password.toHash(this.get('password'));
@@ -51,6 +57,11 @@ userSchema.pre('save', async function (done) {
     done();
 })
 
+/**
+ * Description
+ * @param {UserAttrs} attrs
+ * @returns {any}
+ */
 userSchema.statics.build = (attrs: UserAttrs) => {
     return new User(attrs);
 }

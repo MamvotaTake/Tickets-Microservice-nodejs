@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@takesure/common": "^1.0.10",
+    "@types/cookie-session": "^2.0.44",
+    "cookie-session": "^2.0.0"
+  }
+}
